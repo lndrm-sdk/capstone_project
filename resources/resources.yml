@@ -1,0 +1,9 @@
+resources:
+  jobs:
+    metadata_job:
+      name: bronze-job
+      tasks:
+        - task_key: extract_bronze_data
+          notebook_task:
+            notebook_path: ../notebooks/bronze.py
+          warehouse_id: ${var.warehouse_id}

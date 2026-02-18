@@ -1,0 +1,29 @@
+bundle:
+  name: governance-project
+
+variables:
+  warehouse_id: 
+    description: SQL warehouse ID
+
+targets:
+  dev:
+    workspace:
+      host: https://dbc-5ae5a6c9-9e0e.cloud.databricks.com/
+      profile: dev
+    variables:
+      catalog: governance_dev
+      warehouse_id: 3cf385b976800337
+
+  # test:
+  #   workspace:
+  #     host: https://test-workspace-url
+  #     profile: test
+  #   variables:
+  #     catalog: governance_test
+
+  # prod:
+  #   workspace:
+  #     host: https://prod-workspace-url
+  #     profile: prod
+  #   variables:
+  #     catalog: governance_prod
