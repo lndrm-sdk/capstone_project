@@ -4,6 +4,8 @@ bundle:
 variables:
   warehouse_id: 
     description: SQL warehouse ID
+  catalog:
+    description: Catalog of the workspace
 
 targets:
   dev:
