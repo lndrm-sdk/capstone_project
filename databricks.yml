@@ -10,7 +10,7 @@ variables:
 targets:
   dev:
     workspace:
-      host: https://dbc-5ae5a6c9-9e0e.cloud.databricks.com/
+      host: https://dbc-5ae5a6c9-9e0e.cloud.databricks.com
       profile: dev
     variables:
       catalog: governance_dev
