@@ -7,3 +7,4 @@ resources:
           notebook_task:
             notebook_path: ../notebooks/bronze.py
           warehouse_id: ${var.warehouse_id}
+          catalog: ${var.catalog}
