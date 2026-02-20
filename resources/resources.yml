@@ -5,7 +5,7 @@ resources:
       tasks:
         - task_key: extract_bronze_data
           notebook_task:
-            notebook_path: ../notebooks/bronze_notebook
+            notebook_path: ../notebooks/bronze
           base_parameters:
             warehouse_id: ${var.warehouse_id}
             catalog: ${var.catalog}
