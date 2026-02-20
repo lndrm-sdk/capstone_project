@@ -4,7 +4,9 @@ resources:
       name: bronze-job
       tasks:
         - task_key: extract_bronze_data
-          spark_python_task:
-            python_file: ../notebooks/bronze.py
-          warehouse_id: ${var.warehouse_id}
-          catalog: ${var.catalog}
+          notebook_task:
+            notebook_path: ../notebooks/bronze_notebook
+          base_parameters:
+            warehouse_id: ${var.warehouse_id}
+            catalog: ${var.catalog}
+  
