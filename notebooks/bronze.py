@@ -5,11 +5,12 @@ print("Using catalog:", catalog)
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC CREATE OR REPLACE TABLE bronze.customer_raw (
-# MAGIC     customer_id STRING,
-# MAGIC     name STRING,
-# MAGIC     email STRING,
-# MAGIC     signup_date STRING,
-# MAGIC     ingestion_timestamp TIMESTAMP
-# MAGIC );
+spark.sql("""
+CREATE OR REPLACE TABLE bronze.customer_raw (
+    customer_id STRING,
+    name STRING,
+    email STRING,
+    signup_date STRING,
+    ingestion_timestamp TIMESTAMP
+)
+""")
