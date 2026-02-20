@@ -1,4 +1,5 @@
 # Databricks notebook source
+dbutils.widgets.text("catalog", "")
 catalog = dbutils.widgets.get("catalog")
 print("Using catalog:", catalog)
 
